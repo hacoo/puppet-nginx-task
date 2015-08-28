@@ -14,7 +14,7 @@ import unittest
 import time
 
 
-default_url = "http://198.199.110.205:8000" # change this to set default
+default_url = "http://162.243.156.89:8000" # change this to set default
 
 
 
@@ -27,7 +27,7 @@ class NewVisitorTest(unittest.TestCase):
                          self.browser.title)
 
     def test_PSE_text_exists(self):
-        """ Check that the webpage contains the h1 text, 'PSE Exercise'''"""
+        """ Check that the webpage contains the h1 text, 'PSE Exercise'"""
         self.browser.get(self.server_url)
         h1_text = self.browser.find_elements_by_tag_name('h1')
         PSE_text_found = False
